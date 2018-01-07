@@ -20,6 +20,7 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    overflow: hidden; /* testing to see if fixes clip-path*/
     position: relative;
   }
 
