@@ -1,3 +1,16 @@
+/*
+0 - 600px:      phone (max-width)
+600 - 900px:    Tablet portrait (max-width)
+900 - 1200px:   Tablet landscape (max-width)
+1200 - 1800 is where normal styles apply
+1800 +:         Big desktop (min-width)
+
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -28,6 +41,15 @@
 /* sets root font size. Want 10px base so 10/16 =.625 or 62.5% */
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
